@@ -4,6 +4,13 @@ chrome.extension.onRequest.addListener(
       case 'showIcon':
         chrome.pageAction.show(sender.tab.id);
         break;
+      case 'hideIcon':
+        chrome.pageAction.setIcon({
+          tabId: sender.tab.id,
+          path: '/icons/icon_disabled.png'
+        });
+        chrome.pageAction.hide(sender.tab.id);
+        break;
     }
     sendResponse({});
   }
