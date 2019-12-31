@@ -1,12 +1,14 @@
-chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
-  if (request === 'showIcon') {
-    chrome.pageAction.show(sender.tab.id);
+chrome.extension.onRequest.addListener(
+  (request, sender, sendResponse) => {
+    switch (request) {
+      case 'showIcon':
+        chrome.pageAction.show(sender.tab.id);
+        break;
+    }
+    sendResponse({});
   }
-  sendResponse({});
-});
+);
 
-
-chrome.pageAction.onClicked.addListener(function (tab) {
-  chrome.tabs.sendMessage(tab.id, 'generateRss');
-  console.log('icon clicked');
-});
+chrome.pageAction.onClicked.addListener(
+  tab => chrome.tabs.sendMessage(tab.id, 'generateRss')
+);
