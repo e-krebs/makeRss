@@ -10,9 +10,11 @@
   "scripts": {
     "build": "parcel build src/manifest.json -d build/ --no-source-maps && yarn copy",
     "watch": "parcel watch src/manifest.json -d build/",
-    "copy": "copyfiles -u 1 src/manifest.json build"
+    "copy": "copyfiles -u 1 src/manifest.json build",
+    "zip": "cd build && bestzip ../makeRss.zip *"
   },
   "devDependencies": {
+    "bestzip": "^2.1.5",
     "copyfiles": "^2.1.1",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-static-files-copy": "^2.2.1",

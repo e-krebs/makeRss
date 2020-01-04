@@ -18,3 +18,8 @@ _(you may have to **save** the manifest.json file once so that it is not minifie
 ```sh
 yarn build
 ```
+
+## zip for publishing
+```sh
+yarn zip
+```
