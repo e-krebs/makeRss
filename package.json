@@ -1,0 +1,31 @@
+{
+  "name": "makeRss",
+  "version": "0.0.3",
+  "description": "chrome extension to generate an rss item on a specific website",
+  "main": "src/index.ts",
+  "repository": "https://github.com/e-krebs/makeRss",
+  "author": "Emmanuel Krebs <e-krebs@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "parcel build src/manifest.json -d build/ --no-source-maps && yarn copy",
+    "watch": "parcel watch src/manifest.json -d build/",
+    "copy": "copyfiles -u 1 src/manifest.json build",
+    "zip": "cd build && bestzip ../makeRss.zip *"
+  },
+  "devDependencies": {
+    "bestzip": "^2.1.5",
+    "copyfiles": "^2.1.1",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.2.1",
+    "parcel-plugin-web-extension": "^1.5.2"
+  },
+  "dependencies": {
+    "moment": "^2.24.0"
+  },
+  "staticFiles": {
+    "staticPath": "src",
+    "excludeGlob": "*.js",
+    "watcherGlob": "**"
+  }
+}
