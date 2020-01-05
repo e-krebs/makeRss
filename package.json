@@ -1,5 +1,5 @@
 {
-  "name": "makeRss",
+  "name": "make-rss",
   "version": "0.0.3",
   "description": "chrome extension to generate an rss item on a specific website",
   "main": "src/index.ts",

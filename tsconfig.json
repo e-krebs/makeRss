@@ -8,6 +8,7 @@
       "es5",
       "es2015"
     ],
+    "outDir": "build",
     "allowJs": true,
     "sourceMap": false,
     "types": ["@types/chrome", "node"],
