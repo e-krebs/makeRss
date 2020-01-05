@@ -4,17 +4,17 @@ import 'moment/locale/fr';
 import { SC } from './soundcloud-player-api';
   
 const soundcloudIframes = Array
-  .from(document.querySelectorAll('article iframe[src]'))
-  .filter(i => i.src.includes('soundcloud'));
+  .from(document.querySelectorAll<HTMLIFrameElement>('article iframe[src]'))
+  .filter((i: HTMLIFrameElement) => i.src.includes('soundcloud'));
 
 var generateRss = () => {
-  if (!soundcloudIframes) return;
+  if (!soundcloudIframes || !document) return;
   soundcloudIframes[0].id = "gk2rss";
 
   moment.locale('fr');
   const textDate = document
-    .querySelector('article header time')
-    .innerText
+    .querySelector<HTMLElement>('article header time')
+    ?.innerText
     .replace('h', ':')
     .replace('  ', ' ');
   const date = moment(textDate, 'DD MMMM Y à hh:mm');
@@ -23,12 +23,12 @@ var generateRss = () => {
   const pubDate = date.format('dd, D MMM Y h:mm:ss');
   
   const description = Array
-    .from(document.querySelectorAll('article > div p'))
+    .from(document.querySelectorAll<HTMLElement>('article > div p'))
     .map(i => i.innerText)
     .reduce((x, y) => `${x}\n${y}`);
 
   SC.Widget('gk2rss')
-    .getCurrentSound(x => {
+    .getCurrentSound((x: any) => {
 
     const item =
 `<item>

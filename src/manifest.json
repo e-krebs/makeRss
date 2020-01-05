@@ -17,13 +17,13 @@
         "https://*.gamekult.com/*"
       ],
       "js": [
-        "index.js"
+        "index.ts"
       ]
     }
   ],
   "background": {
     "scripts": [
-      "background.js"
+      "background.ts"
     ]
   }
 }
