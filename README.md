@@ -3,23 +3,28 @@
 A personal extension to generate an rss item from a specific set of website:
 - gamekult.com
 
+Mostly written in typescript
+
 # how to
 ## files
 - source files are in the `/src` folder
 - output is produced in the `/build` folder
 
+You can run the following command to clean the folders:
+```sh
+yarn clean
+```
+
 ## watch
 ```sh
 yarn watch
 ```
-_(you may have to **save** the manifest.json file once so that it is not minified. chrome doesn't like minified manifest)._
 
-## build
+## build & prepare for publishing
 ```sh
-yarn build
+yarn build | yarn zip
 ```
-
-## zip for publishing
-```sh
-yarn zip
-```
+this will:
+1. clean
+2. build the sources
+3. make a zip file that can then be uploaded to the store
