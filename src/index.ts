@@ -3,18 +3,18 @@ import { copyItemAsXml } from './utils';
 import { getGamekultItem } from './utils/extractors';
 
 const setup = (item?: RssItem): void => {
-  if (!item) {
-    // no item
-    chrome.extension.sendRequest(message.hideIcon);
-  } else {
-    // there is an item
-    chrome.extension.sendRequest(message.showIcon);
+  if (!item) return;
 
-    chrome.runtime.onMessage.addListener((msg) => {
-      if (msg === message.generateRss) copyItemAsXml(item);
-    });
-  }
+  // show icon
+  chrome.extension.sendRequest(message.showIcon);
+
+  chrome.runtime.onMessage.addListener((msg) => {
+    if (msg === message.generateRss) copyItemAsXml(item);
+  });
 }
+
+// hide icon by default
+chrome.extension.sendRequest(message.hideIcon);
 
 switch (window.location.host) {
   case 'www.gamekult.com':

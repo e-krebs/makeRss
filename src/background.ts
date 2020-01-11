@@ -7,6 +7,10 @@ chrome.extension.onRequest.addListener(
       const tabId: number = sender.tab.id;
       switch (request) {
         case message.showIcon:
+          chrome.pageAction.setIcon({
+            tabId: tabId,
+            path: '/icons/icon_128.png'
+          });
           chrome.pageAction.show(tabId);
           break;
         case message.hideIcon:
