@@ -1,6 +1,6 @@
 import { RssItem, message } from './typings';
 import { copyItemAsXml } from './utils';
-import { getGamekultItem } from './utils/extractors';
+import { getGamekultItem, getAsiItem } from './utils/extractors';
 
 const setup = (item?: RssItem): void => {
   if (!item) return;
@@ -19,5 +19,8 @@ chrome.extension.sendRequest(message.hideIcon);
 switch (window.location.host) {
   case 'www.gamekult.com':
     getGamekultItem(document, window, setup);
+    break;
+  case 'www.arretsurimages.net':
+    getAsiItem(document, window, setup);
     break;
 }

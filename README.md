@@ -2,6 +2,7 @@
 
 A personal extension to generate an rss item from a specific set of website:
 - gamekult.com
+- arretsurimages.net
 
 Mostly written in typescript
 

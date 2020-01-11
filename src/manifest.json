@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "makeRss",
   "description": "makeRss",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "icons": {
     "16": "/icons/icon_16.png",
     "48": "/icons/icon_48.png",
@@ -14,11 +14,13 @@
   "content_scripts": [
     {
       "matches": [
-        "https://*.gamekult.com/*"
+        "https://*.gamekult.com/*",
+        "https://*.arretsurimages.net/*"
       ],
       "js": [
         "index.ts"
-      ]
+      ],
+      "run_at": "document_end"
     }
   ],
   "background": {
