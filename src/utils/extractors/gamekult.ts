@@ -36,7 +36,7 @@ export const getRssItem = (doc: Document, win: Window, callback: (item?: RssItem
           description,
           link: win.location.href,
           date,
-          audioUrl: x.download_url,
+          audioUrl: `${x.download_url}&client_id=LBCcHmRB8XSStWL6wKH2HPACspQlXg2P`,
           audioLength: x.full_duration
         };
         callback(item);
