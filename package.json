@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@types/chrome": "^0.0.91",
-    "@types/node": "^13.1.4",
+    "@types/node": "^13.9.1",
     "bestzip": "^2.1.5",
     "del-cli": "^3.0.0",
     "moment": "^2.24.0",
