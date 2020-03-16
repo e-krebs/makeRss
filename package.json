@@ -14,7 +14,7 @@
     "zip": "cd build && bestzip ../makeRss.zip *"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.91",
+    "@types/chrome": "^0.0.100",
     "@types/node": "^13.1.4",
     "bestzip": "^2.1.5",
     "del-cli": "^3.0.0",
