@@ -22,5 +22,8 @@
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-web-extension": "^1.6.1",
     "typescript": "^3.7.4"
+  },
+  "resolutions": {
+    "parcel-bundler/**/acorn": "^6.4.1"
   }
 }
