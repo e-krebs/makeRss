@@ -5,6 +5,7 @@ import { RssItem } from "../../typings";
 
 const retry = (doc: Document, win: Window, callback: (item?: RssItem) => void, nb: number): void => {
   nb++;
+  if (nb > 10) return;
   setTimeout(() => {
     getRssItem(doc, win, callback);
   },
@@ -14,7 +15,6 @@ const retry = (doc: Document, win: Window, callback: (item?: RssItem) => void, n
 export const getRssItem = (doc: Document, win: Window, callback: (item?: RssItem) => void, nb: number = 0): void => {
 
   try {
-    console.log('I\'m here');
     const title = doc.querySelector<HTMLElement>('span[itemtype="http://schema.org/Thing"]')?.innerText;
     if (!title) return retry(doc, win, callback, nb);
 
