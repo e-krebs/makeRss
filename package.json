@@ -14,14 +14,14 @@
     "zip": "cd build && bestzip ../makeRss.zip *"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.91",
-    "@types/node": "^13.1.4",
+    "@types/chrome": "^0.0.104",
+    "@types/node": "^13.11.1",
     "bestzip": "^2.1.5",
     "del-cli": "^3.0.0",
     "moment": "^2.24.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-web-extension": "^1.6.1",
-    "typescript": "^3.7.4"
+    "typescript": "^3.8.3"
   },
   "resolutions": {
     "parcel-bundler/**/acorn": "^6.4.1",
