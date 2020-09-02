@@ -16,7 +16,7 @@
   "devDependencies": {
     "@types/chrome": "^0.0.104",
     "@types/node": "^13.11.1",
-    "bestzip": "^2.1.5",
+    "bestzip": "^2.1.7",
     "del-cli": "^3.0.0",
     "moment": "^2.24.0",
     "parcel-bundler": "^1.12.4",
