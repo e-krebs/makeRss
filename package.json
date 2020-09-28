@@ -17,7 +17,7 @@
     "@types/chrome": "^0.0.104",
     "@types/node": "^13.11.1",
     "bestzip": "^2.1.7",
-    "del-cli": "^3.0.0",
+    "del-cli": "^3.0.1",
     "moment": "^2.24.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-web-extension": "^1.6.1",
@@ -28,6 +28,8 @@
     "parcel-bundler/**/dot-prop": "^5.1.1",
     "parcel-bundler/**/minimist": "^1.2.2",
     "parcel-bundler/**/kind-of": "^6.0.3",
-    "parcel-bundler/**/node-forge": "^0.10.0"
+    "parcel-bundler/**/node-forge": "^0.10.0",
+    "parcel-bundler/**/yargs-parser": "^15.0.1",
+    "bestzip/**/yargs-parser": "^15.0.1"
   }
 }
