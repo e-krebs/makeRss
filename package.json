@@ -28,7 +28,7 @@
     "parcel-bundler/**/dot-prop": ">= 5.1.1",
     "parcel-bundler/**/minimist": ">= 1.2.2",
     "parcel-bundler/**/kind-of": ">= 6.0.3",
-    "parcel-bundler/**/node-forge": ">= 0.10.0",
+    "parcel-plugin-web-extension/**/node-forge": ">= 0.10.0",
     "parcel-bundler/**/yargs-parser": ">= 15.0.1",
     "bestzip/**/yargs-parser": ">= 15.0.1",
     "parcel-bundler/**/is-svg": ">= 4.2.2"
