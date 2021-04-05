@@ -16,7 +16,7 @@
   "devDependencies": {
     "@types/chrome": "^0.0.104",
     "@types/node": "^13.11.1",
-    "bestzip": "^2.1.7",
+    "bestzip": "^2.2.0",
     "del-cli": "^3.0.1",
     "moment": "^2.24.0",
     "parcel-bundler": "^1.12.5",
@@ -29,8 +29,6 @@
     "parcel-bundler/**/minimist": ">= 1.2.2",
     "parcel-bundler/**/kind-of": ">= 6.0.3",
     "parcel-plugin-web-extension/**/node-forge": ">= 0.10.0",
-    "parcel-bundler/**/yargs-parser": ">= 15.0.1",
-    "bestzip/**/yargs-parser": ">= 15.0.1",
     "parcel-bundler/**/is-svg": ">= 4.2.2"
   }
 }
