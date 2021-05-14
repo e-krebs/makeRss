@@ -27,8 +27,10 @@
     "parcel-bundler/**/acorn": ">= 6.4.1",
     "parcel-bundler/**/dot-prop": ">= 5.1.1",
     "parcel-bundler/**/minimist": ">= 1.2.2",
+    "parcel-bundler/**/postcss": ">= 8.2.10",
     "parcel-bundler/**/kind-of": ">= 6.0.3",
     "parcel-plugin-web-extension/**/node-forge": ">= 0.10.0",
+    "parcel-plugin-web-extension/**/postcss": ">= 8.2.10",
     "parcel-bundler/**/is-svg": ">= 4.2.2"
   }
 }
