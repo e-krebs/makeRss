@@ -26,6 +26,7 @@
   "resolutions": {
     "**/set-value": ">= 4.0.1",
     "**/nth-check": ">= 2.0.1",
+    "**/ansi-regex": ">= 5.0.1",
     "del-cli/**/glob-parent": ">= 5.1.2",
     "parcel-bundler/**/acorn": ">= 6.4.1",
     "parcel-bundler/**/dot-prop": ">= 5.1.1",
