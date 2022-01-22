@@ -30,15 +30,17 @@
     "del-cli/**/glob-parent": ">= 5.1.2",
     "parcel-bundler/**/acorn": ">= 6.4.1",
     "parcel-bundler/**/dot-prop": ">= 5.1.1",
+    "parcel-bundler/**/json-schema": ">= 0.4.0",
     "parcel-bundler/**/minimist": ">= 1.2.2",
     "parcel-bundler/**/postcss": ">= 8.2.10",
     "parcel-bundler/**/kind-of": ">= 6.0.3",
     "parcel-bundler/**/glob-parent": ">= 5.1.2",
     "parcel-bundler/**/normalize-url": ">= 4.5.1",
     "parcel-bundler/**/ws": ">= 6.2.2",
-    "parcel-plugin-web-extension/**/node-forge": ">= 0.10.0",
+    "node-forge": ">= 1.0.0",
     "parcel-plugin-web-extension/**/postcss": ">= 8.2.10",
     "parcel-plugin-web-extension/**/ws": ">= 6.2.2",
+    "parcel-plugin-web-extension/parcel-bundler": "^1.6.1",
     "parcel-bundler/**/is-svg": ">= 4.2.2"
   }
 }
